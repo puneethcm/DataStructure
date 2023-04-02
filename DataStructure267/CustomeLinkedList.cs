@@ -3,7 +3,7 @@ using System.Xml.Linq;
 
 namespace DataStructure267
 {
-	public class LinkedList<T>
+	public class CustomeLinkedList<T>
 	{
         public Node<T> head;
 
