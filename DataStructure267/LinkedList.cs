@@ -34,25 +34,14 @@ namespace DataStructure267
             Console.WriteLine("{0} is inserted into LikedList", node.data);
         }
 
-        public void RemoveFist(T data)
+        public void RemoveFist()
         {
             Node<T> temp = head;
             if (temp == null)
                 Console.WriteLine("Its empty please add nodes");
             else
-            {
-                while(temp!= null)
-                {
-                    if(temp.data.Equals(data))
-                    {
-                        head = temp.next;
-                        Console.WriteLine("{0} node is removed", head.data);
-                    }
-                    temp = temp.next;
-                }
-            }
-            //    Console.WriteLine("{0} is removed", head.data);
-            //head = head.next;
+                Console.WriteLine("{0} is removed", head.data);
+            head = head.next;
         }
         public void Search(T data)
         {
