@@ -7,7 +7,7 @@ internal class Program
     {
         Console.WriteLine("Welcome to Data Structure");
         Console.WriteLine("Choose an option");
-        Console.WriteLine("\n1:Custome LinkedList\n2:Custome Stack\n3:Custom Queue\n4:LinkedList\n5:Stacks");
+        Console.WriteLine("\n1:Custome LinkedList\n2:Custome Stack\n3:Custom Queue\n4:LinkedList\n5:Stacks\n6:Queues");
         int option = Convert.ToInt32(Console.ReadLine());
         switch (option)
         {
@@ -62,7 +62,10 @@ internal class Program
             case 5:
                 CustomeStack customeStack = new CustomeStack();
                 customeStack.CustomeStackOperations();
-                //CustomeStack.Display();
+                break;
+            case 6:
+                CustomeQueues customeQueues = new CustomeQueues();
+                customeQueues.CustomQueues();
                 break;
         }
         Console.ReadLine();
